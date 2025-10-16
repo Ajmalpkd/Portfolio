@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDesigner | Responsive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJdTMvI5T/wJqfa7fT8w3c98YdL6gL2E7y7JzL2A5w/z+l+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4F46E5', // Indigo-600
+                        'secondary': '#1F2937', // Gray-800
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-100 text-secondary ">
+
+    <header class="bg-white shadow sticky top-0 z-50  ">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-primary">Portfolio</a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="hover:text-primary transition duration-300 font-medium">Home</a>
+                <a href="#skills" class="hover:text-primary transition duration-300 font-medium">Skills</a>
+                <a href="#projects" class="hover:text-primary transition duration-300 font-medium">Projects</a>
+                <a href="#contact" class="hover:text-primary transition duration-300 font-medium">Contact</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-secondary hover:bg-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#hero" class="block px-6 py-2 hover:bg-gray-100 font-medium">Home</a>
+            <a href="#skills" class="block px-6 py-2 hover:bg-gray-100 font-medium">Skills</a>
+            <a href="#projects" class="block px-6 py-2 hover:bg-gray-100 font-medium">Projects</a>
+            <a href="#contact" class="block px-6 py-2 hover:bg-gray-100 font-medium">Contact</a>
+        </div>
+    </header>
+    
+    <main>
+        <section id="hero" class="py-24 bg-white ">
+                <div class="container mx-auto px-6 md:flex items-center justify-between">
+                    <div class="px-8 md:w-1/2 ">
+
+                        <p data-aos="fade-right" data-aos-duration="1000" class="text-xl text-primary font-semibold mb-3">Hi, I'm Ajmal</p>
+
+                        <h1 data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="300" class="text-3xl md:text-6xl font-extrabold leading-tight mb-4">
+                            <span class="text-secondary"> Web Designer</span> <span class="text-primary">Graphic Designer</span>
+                        </h1>
+
+                        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" class="text-sm text-gray-600 mb-8 max-w-lg">
+                            I am a multidisciplinary designer specializing in Web Design and Visual Branding. I create clean, accessible, and fast websites using HTML, Tailwind/CSS,
+                            and JS, complemented by strong Adobe Suite skills to deliver compelling vector graphics and print materials.
+                        </p>
+
+                        <a href="#projects" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="700" class="inline-block bg-primary text-white text-lg font-semibold py-3 px-8 rounded-lg hover:bg-indigo-700 transition duration-300 shadow-md">
+                            View My Work
+                        </a>
+                    </div>
+                
+                    <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+                        <div data-aos="flip-right" data-aos-duration="1500" class="w-64 h-64 bg-white border-2 border-indigo-600 rounded-full flex items-center justify-center shadow-xl overflow-hidden">
+                            <img class=" w-full h-full pr-6 object-cover" src="./Photos/my.png" alt="Your Profile Picture">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-gray-100 px-5">
+            <div class="container mx-auto px-6">
+                <h2 data-aos="fade-down" class="text-4xl font-bold text-center mb-12">My Core Skills</h2>
+                
+              
+                    <div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div data-aos="fade-right" class="bg-white p-8  rounded-lg shadow-lg text-center flex flex-col justify-center items-center border-2 border-white hover:border-indigo-600  hover:shadow-xl 
+                        transition duration-300 ease-in-out  ">
+                            <span class="text-4xl mb-4 block"> <img class="w-12" src="./Photos/html.png" alt=""> </span>
+                            <h3 class="text-xl font-semibold mb-2">HTML & CSS</h3>
+                            <p class="text-gray-600 text-sm">Semantic markup and modern layout techniques  (Flexbox/Grid).</p>
+                        </div>
+                        <div data-aos="fade-right" class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col justify-center items-center border-2 border-white hover:border-indigo-600  hover:shadow-xl 
+                        transition duration-300 ease-in-out">
+                            <span class="text-4xl text-primary mb-4 block"><img class="w-12" src="./Photos/tailwind-css.png" alt=""></span>
+                            <h3 class="text-xl font-semibold mb-2">Tailwind CSS</h3>
+                            <p class="text-gray-600 text-sm">Rapid, utility-first styling for fast, responsive development.</p>
+                        </div>
+                        <div  data-aos="fade-left" class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col justify-center items-center border-2 border-white hover:border-indigo-600  hover:shadow-xl 
+                        transition duration-300 ease-in-out">
+                            <span class="text-4xl text-primary mb-4 block"><img class="w-12" src="./Photos/icons8-bootstrap-50.png" alt=""></span>
+                            <h3 class="text-xl font-semibold mb-2">Bootstrap CSS</h3>
+                            <p class="text-gray-600 text-sm">Rapid, utility-first styling for fast, responsive development.</p>
+                        </div>
+                        <div  data-aos="fade-left" class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col justify-center items-center border-2 border-white hover:border-indigo-600  hover:shadow-xl 
+                        transition duration-300 ease-in-out">
+                            <span class="text-4xl text-primary mb-4 block"><img class="w-12" src="./Photos/icons8-javascript-logo-50.png" alt=""></span>
+                            <h3 class="text-xl font-semibold mb-2">JavaScript (JS)</h3>
+                            <p class="text-gray-600 text-sm">Creating dynamic, interactive, and engaging web elements.</p>
+                        </div>
+                        <div data-aos="fade-right" class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col justify-center items-center border-2  border-white hover:border-indigo-600  hover:shadow-xl 
+                        transition duration-300 ease-in-out">
+                            <span class="text-4xl text-primary mb-4 block"><img class="w-12" src="./Photos/icons8-responsive-50.png" alt=""></span>
+                            <h3 class="text-xl font-semibold mb-2">Responsive Design</h3>
+                            <p class="text-gray-600 text-sm">Mobile-first approach for all screen sizes.</p>
+                        </div>
+                    
+                        <div data-aos="fade-right" class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col justify-center items-center border-2 border-white hover:border-indigo-600  hover:shadow-xl 
+                        transition duration-300 ease-in-out">
+                            <span class="text-4xl text-primary mb-4 block"><img class="w-12" src="./Photos/icons8-adobe-photoshop-48.png" alt=""></span> <h3 class="text-xl font-semibold mb-2">Adobe Photoshop</h3>
+                            <p class="text-gray-600 text-sm">Image manipulation, retouching, and graphic design for web assets.</p>
+                        </div>
+                        <div  data-aos="fade-left" class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col justify-center items-center border-2 border-white hover:border-indigo-600  hover:shadow-xl 
+                        transition duration-300 ease-in-out">
+                            <span class="text-4xl text-primary mb-4 block"><img class="w-12" src="./Photos/icons8-adobe-indesign-48.png" alt=""></span> <h3 class="text-xl font-semibold mb-2">Adobe InDesign</h3>
+                            <p class="text-gray-600 text-sm">Layout design for digital publications, e-books, and interactive PDFs.</p>
+                        </div>
+                        <div  data-aos="fade-left" class="bg-white p-8 rounded-lg shadow-lg text-center flex flex-col justify-center items-center border-2 border-white hover:border-indigo-600  hover:shadow-xl 
+                        transition duration-300 ease-in-out">
+                            <span class="text-4xl text-primary mb-4 block"><img class="w-12" src="./Photos/icons8-adobe-illustrator-48.png" alt=""></span> <h3 class="text-xl font-semibold mb-2">Adobe Illustrator</h3>
+                            <p class="text-gray-600 text-sm">Vector graphics, iconography, and scalable logos for web and print.</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 data-aos="fade-down" class="text-4xl font-bold text-center mb-5">Featured Projects</h2>
+
+                <div data-aos="fade-down" class="flex justify-center gap-5 mb-5">
+                    <button type="button" class="web inline-block text-xs px-3 py-1 rounded-full focus:outline-none transition  bg-gray-300
+                     text-gray-700 hover:bg-blue-600 hover:text-white">Web Design</button>
+
+                    <button type="button" class="graphic inline-block text-xs px-3 py-1 rounded-full focus:outline-none transition 
+                   bg-gray-300 text-gray-700 hover:bg-blue-600  hover:text-white"> Graphic Design</button>
+                </div>
+
+                <!--Web Work Section -->
+                <div class="webwork grid grid-cols-1 lg:grid-cols-3 gap-10">
+                    <div data-aos="fade-up" class="bg-gray-50 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                        <img src="https://via.placeholder.com/600x400?text=E-commerce+UI" alt="E-commerce UI Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-3">E-commerce UI Kit</h3>
+                            <p class="text-gray-600 mb-4">A complete, responsive design system built entirely with Tailwind utilities.</p>
+                            <span class="inline-block bg-primary text-white text-xs px-3 py-1 rounded-full mr-2">Tailwind CSS</span>
+                            <span class="inline-block bg-gray-300 text-secondary text-xs px-3 py-1 rounded-full">HTML</span>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="bg-gray-50 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                        <img src="https://via.placeholder.com/600x400?text=SaaS+Landing+Page" alt="SaaS Landing Page Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-3">SaaS Landing Page</h3>
+                            <p class="text-gray-600 mb-4">Fast-loading, high-conversion landing page with custom JS animations.</p>
+                            <span class="inline-block bg-primary text-white text-xs px-3 py-1 rounded-full mr-2">JavaScript</span>
+                            <span class="inline-block bg-gray-300 text-secondary text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="bg-gray-50 rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                        <img src="https://via.placeholder.com/600x400?text=Data+Dashboard+Concept" alt="Dashboard Concept" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-3">Data Dashboard Concept</h3>
+                            <p class="text-gray-600 mb-4">Responsive admin dashboard layout focused on data visualization and UX.</p>
+                            <span class="inline-block bg-primary text-white text-xs px-3 py-1 rounded-full mr-2">HTML</span>
+                            <span class="inline-block bg-gray-300 text-secondary text-xs px-3 py-1 rounded-full">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Poster Work Section -->
+                <div class="posterwork grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 scroll-m-1">
+                  <!-- Poster 1 -->
+                 <div data-aos="fade-up"  class="bg-gray-50 rounded-lg border-2 h-fit border-white border-solid shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                     <img src="./Photos/karate.jpg" alt="Poster Design 1" class="">
+                </div>
+                 <div data-aos="fade-up" class="bg-gray-50 rounded-lg border-2 h-fit border-white border-solid shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                     <img src="./Photos/1.jpg" alt="Poster Design 1" class="">
+                </div>
+                 <div data-aos="fade-up" class="bg-gray-50 rounded-lg border-2 h-fit border-white border-solid shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                     <img src="./Photos/1.jpg" alt="Poster Design 1" class="">
+                </div>
+                 <div data-aos="fade-up" class="bg-gray-50 rounded-lg border-2 h-fit border-white border-solid shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                     <img src="./Photos/karate.jpg" alt="Poster Design 1" class="">
+                </div>
+                 <div  data-aos="fade-up" class="bg-gray-50 rounded-lg border-2 h-fit border-white border-solid shadow-xl overflow-hidden hover:shadow-2xl transition duration-300">
+                     <img src="./Photos/1.jpg" alt="Poster Design 1" class="">
+                </div>
+                              
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-primary">
+                <div class="container mx-auto px-6 text-white text-center">
+                  <h2 data-aos="fade-up"data-aos-anchor-placement="top-bottom" class="text-4xl font-bold mb-4">Ready to Start a Project?</h2>
+                  <p data-aos="fade-up"data-aos-anchor-placement="top-bottom" class="text-xl mb-8">Let's discuss your next great idea.</p>
+                
+                  <!-- Contact Buttons -->
+                  <div  class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                    <!-- Email -->
+                    <a data-aos="fade-down-right" href="mailto:ajmalpkd61@gmail.com" 
+                       class="inline-block bg-white text-primary text-lg font-semibold py-3 px-10 rounded-lg hover:bg-gray-200 transition duration-300 shadow-lg">
+                      Email Me
+                    </a>
+                
+                    <!-- WhatsApp -->
+                    <a data-aos="fade-down-left" href="https://wa.me/9544546930" target="_blank"
+                       class="inline-block bg-green-500 text-white text-lg font-semibold py-3 px-10 rounded-lg hover:bg-green-600 transition duration-300 shadow-lg">
+                      WhatsApp Me
+                    </a>
+                  </div>
+              
+                  <!-- Contact Form -->
+                  <form data-aos="fade-up"data-aos-duration="3000" class="mt-12 max-w-lg mx-auto bg-white p-8 rounded-lg shadow-2xl text-secondary">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                    <textarea placeholder="Your Message" rows="4" class="w-full p-3 mb-6 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                    <button type="submit" class="w-full bg-primary text-white font-semibold py-3 rounded-md hover:bg-indigo-700 transition duration-300">Send Message</button>
+                  </form>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-secondary text-white py-6">
+        <div class="container mx-auto px-6 text-center text-sm">
+            &copy; 2025 WDesigner Portfolio. Built with HTML, Tailwind CSS, & JS.
+        </div>
+    </footer>
+
+    
+    <script src="./Script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
